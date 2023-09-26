@@ -32,9 +32,9 @@ const Form = () => {
         <Link to={choice === 'yes' ? '/yes' : '/no'}>
           <button type="submit">SUBMIT</button>
         </Link>
+
       </form>
     </div>
   );
 };
-
 export default Form;
