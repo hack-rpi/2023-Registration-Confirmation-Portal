@@ -1,7 +1,9 @@
+import Form from "./Form";
+
 function App() {
   return (
     <div>
-        Hi!
+       <Form/>
     </div>
   );
 }
