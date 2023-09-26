@@ -1,9 +1,9 @@
-import Form from "./Form";
+import Routes from "./Routes";
 
 function App() {
   return (
     <div>
-       <Form/>
+      <Routes/>
     </div>
   );
 }

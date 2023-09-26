@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -12,7 +13,6 @@ const Form = () => {
   return (
     <div className="container">
       <form>
-      
         <label htmlFor="Name">Name: </label>
         <input type="text" placeholder="Enter Name" name="name" id="name" value={name} onChange={handleNameChange} required />
         <br />
@@ -29,9 +29,9 @@ const Form = () => {
           <label htmlFor="no">NO</label>
         </div>
 
-        <button type="submit">SUBMIT</button>
-
-        
+        <Link to={choice === 'yes' ? '/yes' : '/no'}>
+          <button type="submit">SUBMIT</button>
+        </Link>
       </form>
     </div>
   );
